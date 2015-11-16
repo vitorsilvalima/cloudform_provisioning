@@ -1,0 +1,11 @@
+ul>li{
+	list-style-type:none;
+	margin-top:5px;
+}
+ul{
+	padding:0px;
+}
+#dv_login
+{
+	text-align:center;
+}
