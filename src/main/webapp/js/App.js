@@ -1,22 +1,21 @@
 var app = angular.module("VivoApp",['ngRoute',]).config(
-        [ '$httpProvider', '$routeProvider', function($httpProvider, $routeProvider) {
+        [ '$httpProvider', '$routeProvider', '$locationProvider', function($httpProvider, $routeProvider, $locationProvider) {
             /*
              * Use a HTTP interceptor to add a nonce to every request to prevent MSIE from caching responses.
              */
             $httpProvider.interceptors.push('ajaxNonceInterceptor');
-
             $routeProvider.
             // if URL fragment is /home, then load the home partial, with the
             // MembersCtrl controller
             when('/login', {
                 templateUrl : 'templates/login.html',
-                //controller : MembersCtrl
+                controller : LoginCtrl
             // Add a default route
             }).otherwise({
                 redirectTo : '/login'
             });
-        } ])
-    .factory('ajaxNonceInterceptor', function() {
+        } ]);
+    app.factory('ajaxNonceInterceptor', function() {
         // This interceptor is equivalent to the behavior induced by $.ajaxSetup({cache:false});
 
         var param_start = /\?/;
