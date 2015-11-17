@@ -1,0 +1,3 @@
+org/vivo/cloudprovisioning/rest/JaxRsActivator.class
+org/vivo/cloudprovisioning/model/User.class
+org/vivo/cloudprovisioning/rest/UserRest.class
