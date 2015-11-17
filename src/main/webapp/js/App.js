@@ -1,4 +1,4 @@
-var app = angular.module("VivoApp",['ngRoute',]).config(
+var app = angular.module("VivoApp",['ngRoute','userService']).config(
         [ '$httpProvider', '$routeProvider', '$locationProvider', function($httpProvider, $routeProvider, $locationProvider) {
             /*
              * Use a HTTP interceptor to add a nonce to every request to prevent MSIE from caching responses.
