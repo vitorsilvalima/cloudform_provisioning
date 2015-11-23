@@ -2,3 +2,4 @@
 /home/vlima/workspace/cloudprovisioning/src/main/java/org/vivo/cloudprovisioning/model/User.java
 /home/vlima/workspace/cloudprovisioning/src/main/java/org/vivo/cloudprovisioning/rest/JaxRsActivator.java
 /home/vlima/workspace/cloudprovisioning/src/main/java/org/vivo/cloudprovisioning/factory/UserFactory.java
+/home/vlima/workspace/cloudprovisioning/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java

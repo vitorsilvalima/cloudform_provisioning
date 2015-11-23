@@ -11,8 +11,15 @@ var app = angular.module("VivoApp",['ngRoute','userService']).config(
                 templateUrl : 'templates/login.html',
                 controller : LoginCtrl
             // Add a default route
-            }).otherwise({
-                redirectTo : '/login'
+            }).
+            when('/menu', {
+                templateUrl : 'templates/menuTemplate.html',
+                //controller : LoginCtrl
+            // Add a default route
+            })
+            .otherwise
+            ({
+                redirectTo : '/menu'
             });
         } ]);
     app.factory('ajaxNonceInterceptor', function() {
