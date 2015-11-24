@@ -1,11 +1,7 @@
-ul>li{
-	list-style-type:none;
-	margin-top:5px;
-}
-ul{
-	padding:0px;
-}
 #dv_login
 {
 	text-align:center;
+}
+.vertical-offset-100{
+    padding-top:100px;
 }

@@ -26,7 +26,7 @@ public class UserRest {
     public Response listAllUsers() 
     {
     	//JbpmManager test = new JbpmManager();
-    	jbpmManager.startProcess();
+    	//jbpmManager.startProcess();
     	UserFactory fUser = new UserFactory();
     	List<User>users = fUser.getList();
     	if(users.isEmpty()) return Response.noContent().build();
@@ -37,16 +37,31 @@ public class UserRest {
     @Produces(MediaType.APPLICATION_JSON)
     public Response lookupUserByLogin(User user)
     {
-    	System.out.println(user);
+    	class Status
+    	{
+    		public boolean status;
+    		public Status()
+    		{
+    			this.status=false;
+    		}
+    		public void setStatus(boolean status)
+    		{
+    			this.status=status;
+    		}
+    	}
+    	Status status = new Status();
+    	//System.out.println(user.getName()); 
     	UserFactory fUser = new UserFactory();
     	List<User>users = fUser.getUserByName(user.getLogin());
     	for(User u: users)
     	{
     		if(u.getLogin().equals(user.getLogin()) && u.getPwd().equals(user.getPwd()))
     		{
-    			return Response.ok(true).build();
+    			status.setStatus(true);
+    			return Response.ok(status).build();
     		}
     	}
-    	return Response.ok(false).build();
+    	status.setStatus(false);
+    	return Response.ok(status).build();
     }
 }
