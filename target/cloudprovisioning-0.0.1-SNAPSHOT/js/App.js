@@ -10,18 +10,15 @@ var app = angular.module("VivoApp",['ngRoute','userService']).config(
             when('/login', {
                 templateUrl : 'templates/login.html',
                 controller : LoginCtrl
-            // Add a default route
             }).
             when('/requisicao', {
-                templateUrl : 'templates/menuTemplate.html',
+                templateUrl : 'templates/requestHTML.html',
                 controller : MenuCtrl
-            // Add a default route
             })
             .
             when('/inbox', {
                 templateUrl : 'templates/inbox.html',
                // controller : MenuCtrl
-            // Add a default route
             })
             .otherwise
             ({

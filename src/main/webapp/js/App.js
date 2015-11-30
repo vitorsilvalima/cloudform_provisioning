@@ -1,3 +1,4 @@
+//var app = angular.module("VivoApp",['ngRoute','userService']).config(
 var app = angular.module("VivoApp",['ngRoute','userService']).config(
         [ '$httpProvider', '$routeProvider', '$locationProvider', function($httpProvider, $routeProvider, $locationProvider) {
             /*
@@ -10,18 +11,15 @@ var app = angular.module("VivoApp",['ngRoute','userService']).config(
             when('/login', {
                 templateUrl : 'templates/login.html',
                 controller : LoginCtrl
-            // Add a default route
             }).
             when('/requisicao', {
-                templateUrl : 'templates/menuTemplate.html',
-                controller : MenuCtrl
-            // Add a default route
+                templateUrl : 'templates/resquestHTML.html',
+                controller : CartCtrl
             })
             .
             when('/inbox', {
                 templateUrl : 'templates/inbox.html',
-               // controller : MenuCtrl
-            // Add a default route
+                //controller : MenuCtrl
             })
             .otherwise
             ({
