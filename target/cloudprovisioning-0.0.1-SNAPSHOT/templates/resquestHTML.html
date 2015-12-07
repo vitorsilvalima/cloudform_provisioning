@@ -1,12 +1,52 @@
+<ul class="nav nav-tabs">
+  <li id= "solicita" role="presentation" class="active"><a>Solicitar</a></li>
+  <li id="inbox" role="presentation"><a href="#/inbox">Inbox</a></li>
+</ul>
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
+  <div class="panel-heading">Carrinho</div>
 
   <!-- Table -->
   <table class="table">
-    ...
+    <thead>
+    	  <tr>
+            <th>Quantidade de VMs</th>
+            <th>Numero de vCPUs</th>
+            <th>Quantidade de RAM</th>
+            <th>S.O.</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<tr ng:repeat="item in cart.items">
+			<td>
+				<input type="number" ng:model="item.qtd" ng:required class="form-control">
+			</td>    
+			<td>
+				<select class="form-control" ng-model="item.cpu" 
+				        ng-options="item as item.value for item in cpu">           
+				</select>
+			</td>          
+            <td>
+				<select class="form-control" ng-model="item.memory" 
+				        ng-options="item as item.value for item in memory">           
+				</select>
+			</td>    
+            <td>
+				<select class="form-control" ng-model="item.so" 
+				        ng-options="item as item.value for item in so">           
+				</select>
+			</td>   
+            <td>
+                [<a href ng:click="removeItem($index)">X</a>]
+            </td>
+        </tr>
+        <tr>
+            <td><a href ng:click="addItem()" class="btn btn-small">add item</a></td>
+            <td></td>
+        </tr>
+    </tbody>
   </table>
-</div>
+</div> 
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/libs/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/libs/bootstrap.min.js"></script>

@@ -28,6 +28,12 @@
             <artifactId>javaee-api</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+			<groupId>org.kie.remote</groupId>
+			<artifactId>kie-services-client</artifactId>
+			<version>6.0.3-redhat-9</version>
+			<scope>compile</scope>
+		</dependency>
   </dependencies>
   <build>
     <plugins>
