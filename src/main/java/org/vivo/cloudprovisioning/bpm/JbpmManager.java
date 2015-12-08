@@ -34,7 +34,7 @@ public class JbpmManager
 	{
 		kmodule = new KModuleDeploymentUnit("com.vivo", "vivo-provisioning", "1.0");
 		//System.out.println(kmodule.getDeploymentDescriptor());
-		System.out.println(kmodule.getDeploymentDescriptor());
+//		System.out.println(kmodule.getDeploymentDescriptor());
 		//processService.startProcess(kmodule.getIdentifier(),"VivoProvisioning.VivoProcess");
 		URL jbpmURL;
 		try 
