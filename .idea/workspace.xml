@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672f8f79-6d9f-41d5-8182-ec1f50f372d9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/lib/aether-api-1.0.0.v20140518.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/lib/jbpm-kie-services-6.2.0.Final-redhat-4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/lib/jbpm-services-api-6.2.0.Final-redhat-4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/lib/jbpm-services-ejb-api-6.2.0.Final-redhat-4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/lib/jbpm-services-ejb-client-6.2.0.Final-redhat-4.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/rest/JaxRsActivator.class" afterPath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/rest/JaxRsActivator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/rest/JaxRsActivator.class" afterPath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/rest/JaxRsActivator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/bpm/JbpmManager.class" afterPath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/bpm/JbpmManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/bpm/JbpmManager.class" afterPath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/bpm/JbpmManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/model/User.class" afterPath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/model/User.class" afterPath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/factory/UserFactory.class" afterPath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/factory/UserFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/factory/UserFactory.class" afterPath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/factory/UserFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/rest/UserRest$1Status.class" afterPath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/rest/UserRest$1Status.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/rest/UserRest$1Status.class" afterPath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/rest/UserRest$1Status.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/rest/UserRest.class" afterPath="$PROJECT_DIR$/target/classes/org/vivo/cloudprovisioning/rest/UserRest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/rest/UserRest.class" afterPath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT/WEB-INF/classes/org/vivo/cloudprovisioning/rest/UserRest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/cloudprovisioning-0.0.1-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java" afterPath="$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/rest/UserRest.java" afterPath="$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/rest/UserRest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.vivo.project/cloudprovisioning/pom.properties" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.vivo.project/cloudprovisioning/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
@@ -32,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+              <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -41,7 +61,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
@@ -58,21 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloudprovisioning-effective-pom.xml" pinned="false" current-in-tab="false">
-        <entry file="mock:///cloudprovisioning-effective-pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="266" column="27" selection-start-line="266" selection-start-column="27" selection-end-line="267" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JbpmManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -99,10 +109,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1279" />
-    <option name="y" value="28" />
+    <option name="x" value="1365" />
     <option name="width" value="1922" />
-    <option name="height" value="1019" />
+    <option name="height" value="1081" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -439,30 +448,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1279" y="28" width="1922" height="1019" extended-state="6" />
-    <editor active="true" />
+    <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -478,14 +487,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -496,7 +497,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>

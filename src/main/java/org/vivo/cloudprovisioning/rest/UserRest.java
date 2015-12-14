@@ -18,15 +18,15 @@ import org.vivo.cloudprovisioning.model.User;
 @Path("/users")
 public class UserRest {
 	
-	@Inject 
-	private JbpmManager jbpmManager;
+	//@Inject 
+	//private JbpmManager jbpmManager;
 	
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response listAllUsers() 
     {
-    	//JbpmManager test = new JbpmManager();
-    	//jbpmManager.startProcess();
+    	JbpmManager test = new JbpmManager();
+    	test.startProcess();
     	UserFactory fUser = new UserFactory();
     	List<User>users = fUser.getList();
     	if(users.isEmpty()) return Response.noContent().build();
