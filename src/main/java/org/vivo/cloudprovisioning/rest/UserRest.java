@@ -1,5 +1,7 @@
 package org.vivo.cloudprovisioning.rest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -37,31 +39,21 @@ public class UserRest {
     @Produces(MediaType.APPLICATION_JSON)
     public Response lookupUserByLogin(User user)
     {
-    	class Status
-    	{
-    		public boolean status;
-    		public Status()
-    		{
-    			this.status=false;
-    		}
-    		public void setStatus(boolean status)
-    		{
-    			this.status=status;
-    		}
-    	}
-    	Status status = new Status();
-    	//System.out.println(user.getName()); 
+		JbpmManager test = new JbpmManager();
+		test.claimTask();
+		Map status = new HashMap();//the return
     	UserFactory fUser = new UserFactory();
     	List<User>users = fUser.getUserByName(user.getLogin());
     	for(User u: users)
     	{
     		if(u.getLogin().equals(user.getLogin()) && u.getPwd().equals(user.getPwd()))
     		{
-    			status.setStatus(true);
+    			//status.setStatus(true);
+				status.put("status",true);
     			return Response.ok(status).build();
     		}
     	}
-    	status.setStatus(false);
+		status.put("status", false);
     	return Response.ok(status).build();
     }
 }

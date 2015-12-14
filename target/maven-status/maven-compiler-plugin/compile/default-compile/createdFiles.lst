@@ -1,6 +1,6 @@
 org/vivo/cloudprovisioning/bpm/JbpmManager.class
 org/vivo/cloudprovisioning/rest/UserRest.class
+org/vivo/cloudprovisioning/model/RequisicaoVM.class
 org/vivo/cloudprovisioning/factory/UserFactory.class
-org/vivo/cloudprovisioning/model/User.class
 org/vivo/cloudprovisioning/rest/JaxRsActivator.class
-org/vivo/cloudprovisioning/rest/UserRest$1Status.class
+org/vivo/cloudprovisioning/model/User.class
