@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="jboss-deployment-structure.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/jboss-deployment-structure.xml" />
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -9,112 +22,63 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-services-ejb-client:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-services-api:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-services-ejb-api:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: commons-io:commons-io:2.1.0.redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-kie-services:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:drools-core:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:drools-compiler:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.antlr:antlr-runtime:3.5" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jdt.core.compiler:ecj:4.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.kie:kie-api:6.3.0.Final-redhat-5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2.redhat-3" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.remote:kie-remote-client:6.3.0.Final-redhat-5" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.9.redhat-4" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.remote:kie-remote-jaxb:6.3.0.Final-redhat-5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-core:2.2.11" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.11" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.9.redhat-4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.9.9.redhat-4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.9.redhat-4" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.remote:kie-remote-common:6.3.0.Final-redhat-5" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.resteasy:jaxrs-api:2.3.12.Final-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.4.GA-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.kie:kie-internal:6.3.0.Final-redhat-5" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.8.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final-redhat-3" level="project" />
+    <orderEntry type="library" name="Maven: org.hornetq:hornetq-core-client:2.3.25.SP3-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.jgroups:jgroups:3.2.13.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hornetq:hornetq-commons:2.3.25.SP3-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.hornetq:hornetq-journal:2.3.25.SP3-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.6.10.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hornetq:hornetq-jms-client:2.3.25.SP3-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.remote.ws:kie-remote-ws-common:6.3.0.Final-redhat-5" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.spec.javax.xml.ws:jboss-jaxws-api_2.2_spec:2.0.2.Final-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-api:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ws.xmlschema:xmlschema-core:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-javamail_1.4_spec:1.7.1" level="project" />
+    <orderEntry type="library" name="Maven: wsdl4j:wsdl4j:1.6.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-frontend-simple:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-core:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-bindings-soap:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-transports-http:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-databinding-jaxb:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-xjc:2.1.13" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxws:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: xml-resolver:xml-resolver:1.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm:3.3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-bindings-xml:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-ws-addr:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-ws-policy:2.7.17.redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.neethi:neethi:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jbpm:jbpm-human-task-core:6.3.0.Final-redhat-5" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.5.0" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-bpmn2:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-flow-builder:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-audit:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:drools-persistence-jpa:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1.redhat-6" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-flow:6.2.0.Final-redhat-4" level="project" />
+    <orderEntry type="library" name="Maven: org.jbpm:jbpm-flow:6.3.0.Final-redhat-5" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:1.6.2.redhat-5" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-persistence-jpa:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-human-task-core:6.2.0.Final-redhat-4" level="project" />
+    <orderEntry type="library" name="Maven: org.drools:drools-core:6.3.0.Final-redhat-5" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.4.0.redhat-4" level="project" />
+    <orderEntry type="library" name="Maven: org.jbpm:jbpm-query-jpa:6.3.0.Final-redhat-5" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1.1.redhat-4" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final-redhat-3" level="project" />
-    <orderEntry type="library" name="Maven: javax.mail:mail:1.4.5.redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.9.redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1.GA-redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-runtime-manager:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-human-task-audit:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jbpm:jbpm-human-task-jpa:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-human-task-workitems:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.kie:kie-api:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.kie:kie-internal:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.kie:kie-ci:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-core:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-repository-metadata:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-interpolation:1.19" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-model:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-model-builder:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings-builder:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-compat:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-aether-provider:3.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:2.5.1" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.0.17" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-util:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-impl:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-connector-basic:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-spi:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-transport-wagon:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-transport-file:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-transport-http:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.2.6" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.2" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M5" level="project" />
-    <orderEntry type="library" name="Maven: javax.enterprise:cdi-api:1.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:10.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.sisu:org.eclipse.sisu.inject:0.0.0.M5" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.ant:ant:1.8.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.8.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.wagon:wagon-http:2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.wagon:wagon-http-shared4:2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.3.redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-cipher:1.4" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-guice:no_aop:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final-redhat-3" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final-redhat-3" level="project" />
-    <orderEntry type="library" name="Maven: org.mvel:mvel2:2.2.4.Final-redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.spec.javax.el:jboss-el-api_2.2_spec:1.0.4.Final-redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.aether:aether-api:1.0.0.v20140518" level="project" />
-    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.19" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1.redhat-3" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.4.0.redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.7" level="project" />
-    <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
-    <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2.redhat-3" level="project" />
-    <orderEntry type="library" name="Maven: org.scannotation:scannotation:1.0.3.redhat-4" level="project" />
-    <orderEntry type="library" name="Maven: org.jbpm:jbpm-shared-services:6.2.0.Final-redhat-4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.remote:kie-services-client:6.0.3-redhat-9" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.remote:kie-services-jaxb:6.0.3-redhat-9" level="project" />
-    <orderEntry type="library" name="Maven: javax.jms:jms:1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.hornetq:hornetq-jms-client:2.3.5.Final-redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: org.hornetq:hornetq-core-client:2.3.5.Final-redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: org.jgroups:jgroups:3.2.5.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.hornetq:hornetq-commons:2.3.5.Final-redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.0.GA" level="project" />
-    <orderEntry type="library" name="Maven: org.hornetq:hornetq-journal:2.3.5.Final-redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.logmanager:jboss-logmanager:1.2.2.GA" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty:3.6.6.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.spec.javax.servlet:jboss-servlet-api_3.0_spec:1.0.2.Final-redhat-1" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.5-redhat-5" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.2_spec:1.0.4.Final-redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:2.6.1-redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.xml.txw2:txw2:20110809-redhat-2" level="project" />
-    <orderEntry type="library" name="Maven: com.github.relaxng:relaxngDatatype:2011.1-redhat-3" level="project" />
+    <orderEntry type="library" name="Maven: org.mvel:mvel2:2.2.7.Final-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:mail:1.4.5.redhat-2" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1.GA-redhat-1" level="project" />
   </component>
 </module>
