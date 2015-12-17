@@ -3,11 +3,13 @@ package org.vivo.cloudprovisioning.model;
 /**
  * Created by vlima on 12/14/15.
  */
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
 public class RequisicaoVM implements java.io.Serializable
 {
-
     static final long serialVersionUID = 1L;
-
     private int quantidade_vm;
     private int numero_vcpus;
     private int quantidade_ram;
@@ -21,10 +23,6 @@ public class RequisicaoVM implements java.io.Serializable
     private java.lang.String ip_backup;
 
     private java.lang.String ip_gerenciamento;
-
-    public RequisicaoVM()
-    {
-    }
 
     public int getQuantidade_vm()
     {
@@ -142,5 +140,7 @@ public class RequisicaoVM implements java.io.Serializable
         this.ip_backup = ip_backup;
         this.ip_gerenciamento = ip_gerenciamento;
     }
+    public RequisicaoVM()
+    {}
 
 }

@@ -5,7 +5,10 @@
 <div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading">Carrinho</div>
-
+    <select class="form-control" ng-model="cart.numeroProjeto">
+    </select>
+    <select class="form-control" ng-model="cart.extraInfo">
+    </select>
   <!-- Table -->
   <table class="table">
     <thead>
@@ -19,22 +22,22 @@
     <tbody>
     	<tr ng:repeat="item in cart.items">
 			<td>
-				<input type="number" ng:model="item.qtd" ng:required class="form-control">
+				<input type="number" ng:model="item.quantidade_vm" ng:required class="form-control">
 			</td>    
 			<td>
-				<select class="form-control" ng-model="item.cpu" 
-				        ng-options="item as item.value for item in cpu">           
+				<select class="form-control" ng-model="item.numero_vcpus">
+				        <option ng-repeat="item in numero_vcpus" value="{{item.value}}">{{item.value}}</option>
 				</select>
 			</td>          
             <td>
-				<select class="form-control" ng-model="item.memory" 
-				        ng-options="item as item.value for item in memory">           
-				</select>
+                <select class="form-control" ng-model="item.quantidade_ram">
+                    <option ng-repeat="item in quantidade_ram" value="{{item.value}}">{{item.value}}</option>
+                </select>
 			</td>    
             <td>
-				<select class="form-control" ng-model="item.so" 
-				        ng-options="item as item.value for item in so">           
-				</select>
+                <select class="form-control" ng-model="item.so">
+                    <option ng-repeat="item in so" value="{{item.value}}">{{item.value}}</option>
+                </select>
 			</td>   
             <td>
                 [<a href ng:click="removeItem($index)">X</a>]
@@ -42,7 +45,7 @@
         </tr>
         <tr>
             <td><a href ng:click="addItem()" class="btn btn-small">add item</a></td>
-            <td></td>
+            <td><a href ng:click="requisitar()" class="btn btn-small">Finalizar</a></td>
         </tr>
     </tbody>
   </table>

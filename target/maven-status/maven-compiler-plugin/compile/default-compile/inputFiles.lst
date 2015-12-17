@@ -3,4 +3,7 @@
 /home/vlima/workspace/cloudform_provisioning/src/main/java/org/vivo/cloudprovisioning/rest/JaxRsActivator.java
 /home/vlima/workspace/cloudform_provisioning/src/main/java/org/vivo/cloudprovisioning/rest/UserRest.java
 /home/vlima/workspace/cloudform_provisioning/src/main/java/org/vivo/cloudprovisioning/factory/UserFactory.java
+/home/vlima/workspace/cloudform_provisioning/src/main/java/org/vivo/cloudprovisioning/model/ProcessRequest.java
+/home/vlima/workspace/cloudform_provisioning/src/main/java/org/vivo/cloudprovisioning/rest/ProcessRest.java
+/home/vlima/workspace/cloudform_provisioning/src/main/java/org/vivo/cloudprovisioning/bpm/ProcessControl.java
 /home/vlima/workspace/cloudform_provisioning/src/main/java/org/vivo/cloudprovisioning/bpm/JbpmManager.java

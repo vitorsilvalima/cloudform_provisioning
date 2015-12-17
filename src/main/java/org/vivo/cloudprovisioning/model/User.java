@@ -1,10 +1,7 @@
 package org.vivo.cloudprovisioning.model;
-import javax.persistence.Entity;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.io.Serializable;
 
-@SuppressWarnings("serial")
-@Entity
+import javax.xml.bind.annotation.XmlRootElement;
+
 @XmlRootElement
 public class User
 {

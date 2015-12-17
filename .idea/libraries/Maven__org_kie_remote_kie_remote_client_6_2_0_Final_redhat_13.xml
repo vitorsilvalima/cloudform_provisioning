@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.kie.remote:kie-remote-client:6.2.0.Final-redhat-13">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kie/remote/kie-remote-client/6.2.0.Final-redhat-13/kie-remote-client-6.2.0.Final-redhat-13.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kie/remote/kie-remote-client/6.2.0.Final-redhat-13/kie-remote-client-6.2.0.Final-redhat-13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kie/remote/kie-remote-client/6.2.0.Final-redhat-13/kie-remote-client-6.2.0.Final-redhat-13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

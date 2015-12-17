@@ -27,8 +27,8 @@ public class UserRest {
     @Produces(MediaType.APPLICATION_JSON)
     public Response listAllUsers() 
     {
-    	JbpmManager test = new JbpmManager();
-    	test.startProcess();
+    	//JbpmManager test = new JbpmManager();
+    //	test.startProcess();
     	UserFactory fUser = new UserFactory();
     	List<User>users = fUser.getList();
     	if(users.isEmpty()) return Response.noContent().build();
@@ -39,8 +39,8 @@ public class UserRest {
     @Produces(MediaType.APPLICATION_JSON)
     public Response lookupUserByLogin(User user)
     {
-		JbpmManager test = new JbpmManager();
-		test.claimTask();
+		//JbpmManager test = new JbpmManager();
+		//test.claimTask();
 		Map status = new HashMap();//the return
     	UserFactory fUser = new UserFactory();
     	List<User>users = fUser.getUserByName(user.getLogin());
@@ -50,6 +50,8 @@ public class UserRest {
     		{
     			//status.setStatus(true);
 				status.put("status",true);
+				status.put("group",u.getGroup());
+				status.put("name",u.getName());
     			return Response.ok(status).build();
     		}
     	}
