@@ -1,9 +1,6 @@
 package org.vivo.cloudprovisioning.model;
 
-import org.vivo.cloudprovisioning.bpm.ProcessControl;
-
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.List;
 
 /**
  * Created by vlima on 12/16/15.
@@ -12,14 +9,14 @@ import java.util.List;
 public class ProcessRequest
 {
     private User user;
-    private List<RequisicaoVM> requisicaoVMs;
+    private RequisicaoData requisicaoData;
     public ProcessRequest()
     {
 
     }
-    public ProcessRequest(User user) {
+    public ProcessRequest(User user, RequisicaoData requisicaoData) {
         this.user = user;
-        this.requisicaoVMs = requisicaoVMs;
+        this.requisicaoData = requisicaoData;
     }
     public User getUser() {
         return user;
@@ -29,11 +26,11 @@ public class ProcessRequest
         this.user = user;
     }
 
-    public List<RequisicaoVM> getRequisicaoVMs() {
-        return requisicaoVMs;
+    public RequisicaoData getRequisicaoData() {
+        return requisicaoData;
     }
 
-    public void setRequisicaoVMs(List<RequisicaoVM> requisicaoVMs) {
-        this.requisicaoVMs = requisicaoVMs;
+    public void setRequisicaoData(RequisicaoData requisicaoData) {
+        this.requisicaoData = requisicaoData;
     }
 }

@@ -1,15 +1,14 @@
 package org.vivo.cloudprovisioning.rest;
 
+import org.jbpm.process.instance.impl.demo.SystemOutWorkItemHandler;
 import org.vivo.cloudprovisioning.bpm.ProcessControl;
 import org.vivo.cloudprovisioning.model.ProcessRequest;
 import org.vivo.cloudprovisioning.model.RequisicaoVM;
-import org.vivo.cloudprovisioning.model.User;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -23,14 +22,11 @@ public class ProcessRest
     public Response getProcess()
     {
         RequisicaoVM r = new RequisicaoVM();
-        r.setCliente("Vitor");
-        r.setExtraInfo("There is no extra info");
         r.setNumero_vcpus(12);
-        r.setNumeroProjeto(4534);
         r.setQuantidade_vm(54);
         r.setSo("RHEL");
         ProcessControl processControl = new ProcessControl();
-        System.out.println("The process has started with the id: " + processControl.starProcess(r));
+      //  System.out.println("The process has started with the id: " + processControl.starProcess(r));
         return Response.ok(r).build();
     }
    /* @POST
@@ -56,12 +52,12 @@ public class ProcessRest
     public Response startProcessUser(ProcessRequest request)
     {
         ProcessControl processControl = new ProcessControl(request.getUser().getLogin(),request.getUser().getPwd());
-        if(request.getRequisicaoVMs()!=null)
+        if(request.getRequisicaoData()!=null)
         {
-            for(RequisicaoVM requisicaoVM:request.getRequisicaoVMs())
-            {
-                System.out.println("The process has started with the id: " + processControl.starProcess(requisicaoVM));
-            }
+            System.out.println(request);
+            System.out.println("The process has started with the id: " + processControl.starProcess(request.getRequisicaoData()));
+          //  System.out.println("Cliente: "+ request.getRequisicaoData().getCliente());
+           // System.out.println("Projeto: "+ request.getRequisicaoData().getNumero_projeto());
         }
         Map res = new HashMap();
         res.put("status",true);

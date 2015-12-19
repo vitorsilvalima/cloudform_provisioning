@@ -68,7 +68,15 @@ function CartCtrl($scope,Process,UserData)
     {
     	console.log($scope.cart.items);
     	console.log(UserData.getUser());
-    	Process.save({"user":UserData.getUser(),"requisicaoVMs":$scope.cart.items}, function(data)
+    	var RequisicaoData={};
+            RequisicaoData.listRequisicao=$scope.cart.items;
+            RequisicaoData.numero_projeto=23432;
+            RequisicaoData.extra_info="test";
+            RequisicaoData.cliente="test";
+     	var ProcessRequest={};
+     	    ProcessRequest.user=UserData.getUser();
+     	    ProcessRequest.requisicaoData=RequisicaoData;
+    	Process.save(ProcessRequest, function(data)
         		{
         			console.log(data);
                 }, function(result) {

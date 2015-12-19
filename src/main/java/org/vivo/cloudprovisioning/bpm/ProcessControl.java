@@ -5,7 +5,7 @@ import org.kie.api.runtime.manager.RuntimeEngine;
 import org.kie.api.task.TaskService;
 import org.kie.services.client.api.RemoteRestRuntimeEngineFactory;
 import org.kie.services.client.api.RemoteRuntimeEngineFactory;
-import org.vivo.cloudprovisioning.model.RequisicaoVM;
+import org.vivo.cloudprovisioning.model.RequisicaoData;
 
 import java.net.URL;
 import java.util.HashMap;
@@ -57,13 +57,14 @@ public class ProcessControl
             ex.printStackTrace();
         }
     }
-    public long starProcess(RequisicaoVM requisicao)
+    public long starProcess(RequisicaoData requisicaoData)
     {
         Map vars = new HashMap();
-        vars.put("requisicao",requisicao);
-        vars.put("capacity_approval",false);
-        vars.put("network_approval",false);
-        vars.put("ti_approval",false);
+        Boolean bolean = new Boolean(false);
+        vars.put("requisicao", requisicaoData);
+        vars.put("capacity_approval",bolean);
+        vars.put("network_approval",bolean);
+        vars.put("ti_approval",bolean);
         KieSession kieSession= engine.getKieSession();
         return kieSession.startProcess("cloud_provision.BPCloudProvision",vars).getId();
     }

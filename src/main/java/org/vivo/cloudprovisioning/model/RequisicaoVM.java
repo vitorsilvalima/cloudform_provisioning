@@ -3,10 +3,7 @@ package org.vivo.cloudprovisioning.model;
 /**
  * Created by vlima on 12/14/15.
  */
-import javax.xml.bind.annotation.XmlRootElement;
-
-
-@XmlRootElement
+@org.kie.api.remote.Remotable
 public class RequisicaoVM implements java.io.Serializable
 {
     static final long serialVersionUID = 1L;
@@ -14,10 +11,6 @@ public class RequisicaoVM implements java.io.Serializable
     private int numero_vcpus;
     private int quantidade_ram;
     private java.lang.String so;
-    private java.lang.String extraInfo;
-    private long numeroProjeto;
-    private java.lang.String cliente;
-
     private java.lang.String ip_producao;
 
     private java.lang.String ip_backup;
@@ -64,36 +57,6 @@ public class RequisicaoVM implements java.io.Serializable
         this.so = so;
     }
 
-    public java.lang.String getExtraInfo()
-    {
-        return this.extraInfo;
-    }
-
-    public void setExtraInfo(java.lang.String extraInfo)
-    {
-        this.extraInfo = extraInfo;
-    }
-
-    public java.lang.String getCliente()
-    {
-        return this.cliente;
-    }
-
-    public void setCliente(java.lang.String cliente)
-    {
-        this.cliente = cliente;
-    }
-
-    public long getNumeroProjeto()
-    {
-        return this.numeroProjeto;
-    }
-
-    public void setNumeroProjeto(long numeroProjeto)
-    {
-        this.numeroProjeto = numeroProjeto;
-    }
-
     public java.lang.String getIp_producao()
     {
         return this.ip_producao;
@@ -124,23 +87,20 @@ public class RequisicaoVM implements java.io.Serializable
         this.ip_gerenciamento = ip_gerenciamento;
     }
 
+    public RequisicaoVM()
+    {
+    }
+
     public RequisicaoVM(int quantidade_vm, int numero_vcpus, int quantidade_ram,
-                        java.lang.String so, java.lang.String extraInfo, long numeroProjeto,
-                        java.lang.String cliente, java.lang.String ip_producao,
+                        java.lang.String so, java.lang.String ip_producao,
                         java.lang.String ip_backup, java.lang.String ip_gerenciamento)
     {
         this.quantidade_vm = quantidade_vm;
         this.numero_vcpus = numero_vcpus;
         this.quantidade_ram = quantidade_ram;
         this.so = so;
-        this.extraInfo = extraInfo;
-        this.numeroProjeto = numeroProjeto;
-        this.cliente = cliente;
         this.ip_producao = ip_producao;
         this.ip_backup = ip_backup;
         this.ip_gerenciamento = ip_gerenciamento;
     }
-    public RequisicaoVM()
-    {}
-
 }
