@@ -5,7 +5,7 @@ import org.kie.api.runtime.manager.RuntimeEngine;
 import org.kie.api.task.TaskService;
 import org.kie.services.client.api.RemoteRestRuntimeEngineFactory;
 import org.kie.services.client.api.RemoteRuntimeEngineFactory;
-import org.vivo.cloudprovisioning.model.RequisicaoData;
+import com.vivo.cloud_provision.RequisicaoData;
 
 import java.net.URL;
 import java.util.HashMap;

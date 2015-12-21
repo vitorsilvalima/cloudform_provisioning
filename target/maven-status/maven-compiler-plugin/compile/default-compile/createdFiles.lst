@@ -1,7 +1,5 @@
 org/vivo/cloudprovisioning/rest/ProcessRest.class
-org/vivo/cloudprovisioning/model/RequisicaoData.class
 org/vivo/cloudprovisioning/rest/UserRest.class
-org/vivo/cloudprovisioning/model/RequisicaoVM.class
 org/vivo/cloudprovisioning/bpm/TaskControl.class
 org/vivo/cloudprovisioning/factory/UserFactory.class
 org/vivo/cloudprovisioning/rest/JaxRsActivator.class
@@ -9,4 +7,5 @@ org/vivo/cloudprovisioning/rest/TaskRest.class
 org/vivo/cloudprovisioning/bpm/JbpmManager.class
 org/vivo/cloudprovisioning/bpm/ProcessControl.class
 org/vivo/cloudprovisioning/model/User.class
+org/vivo/cloudprovisioning/model/TaskRequest.class
 org/vivo/cloudprovisioning/model/ProcessRequest.class

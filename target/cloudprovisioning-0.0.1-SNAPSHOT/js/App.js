@@ -1,5 +1,5 @@
 //var app = angular.module("VivoApp",['ngRoute','userService']).config(
-var app = angular.module("VivoApp",['ngRoute','userService','processService','dataService']).config(
+var app = angular.module("VivoApp",['ngRoute','userService','processService','dataService','taskService']).config(
         [ '$httpProvider', '$routeProvider', '$locationProvider', function($httpProvider, $routeProvider, $locationProvider) {
             /*
              * Use a HTTP interceptor to add a nonce to every request to prevent MSIE from caching responses.
@@ -19,7 +19,7 @@ var app = angular.module("VivoApp",['ngRoute','userService','processService','da
             .
             when('/inbox', {
                 templateUrl : 'templates/inbox.html',
-                //controller : MenuCtrl
+                controller : InboxCtrl
             })
             .otherwise
             ({

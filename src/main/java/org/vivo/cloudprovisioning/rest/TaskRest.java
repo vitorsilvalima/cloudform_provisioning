@@ -1,11 +1,15 @@
 package org.vivo.cloudprovisioning.rest;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+
+import org.vivo.cloudprovisioning.bpm.TaskControl;
+import org.vivo.cloudprovisioning.model.TaskRequest;
+import org.vivo.cloudprovisioning.model.User;
+
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,13 +19,19 @@ import java.util.Map;
 public class TaskRest
 {
     @Path("/tasks")
-    @GET
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getProcess()
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response getTasks(User user)
     {
-        Map test = new HashMap();
-        test.put("oi",432);
-        test.put("test",432);
-        return Response.ok(test).build();
+        TaskControl taskControl = new TaskControl(user.getLogin(),user.getPwd());
+        List<TaskRequest> taskRequestList = taskControl.getTasks();
+        Map tasksMap = new HashMap();
+        if(taskRequestList!=null) {
+            tasksMap.put("tasks",taskRequestList);
+        }else{
+            tasksMap.put("tasks",null);
+        }
+        return Response.ok(tasksMap).build();
     }
 }

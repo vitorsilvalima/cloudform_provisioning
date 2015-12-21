@@ -3,8 +3,8 @@ package org.vivo.cloudprovisioning.rest;
 import org.jbpm.process.instance.impl.demo.SystemOutWorkItemHandler;
 import org.vivo.cloudprovisioning.bpm.ProcessControl;
 import org.vivo.cloudprovisioning.model.ProcessRequest;
-import org.vivo.cloudprovisioning.model.RequisicaoVM;
-
+import com.vivo.cloud_provision.RequisicaoVM;
+import com.vivo.cloud_provision.RequisicaoData;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;

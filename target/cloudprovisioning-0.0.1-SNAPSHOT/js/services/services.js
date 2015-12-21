@@ -4,12 +4,23 @@ angular.module('userService', ['ngResource']).
     	return $resource('rest/users/:userLogin', {});
     }
  );
- angular.module('processService', ['ngResource']).
-     factory('Process', function($resource)
+ angular.module('taskService', ['ngResource']).
+     factory('Task', function($resource)
      {
-     	return $resource('rest/process/:user:requisicaoVMs',{},{'query':  {method:'GET', isArray:false}});
+     	return{
+     		getTasks:function()
+     		{
+     			return $resource('rest/task/tasks/:taskID',{},{'save':  {method:'POST', isArray:false}});
+            }
+     	};
      }
   );
+   angular.module('processService', ['ngResource']).
+       factory('Process', function($resource)
+       {
+       	return $resource('rest/process/:user:requisicaoVMs',{},{'query':  {method:'GET', isArray:false}});
+       }
+    );
   angular.module('dataService',[]).
      factory('UserData', function()
      {

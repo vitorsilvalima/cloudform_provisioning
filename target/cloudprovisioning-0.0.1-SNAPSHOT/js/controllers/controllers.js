@@ -49,6 +49,20 @@ function MenuCtrl($scope)
 	$scope.class1="active";
 	$scope.showDetails=true;
 }
+function InboxCtrl($scope,Task,UserData)
+{
+	Task.getTasks().save(UserData.getUser(), function(data)
+											{
+												$scope.tasks=data.tasks;
+												// $scope.$apply();
+											}, function(result) {
+												   if ((result.status == 409) || (result.status == 400)) {
+													   $scope.errors = result.data;
+												   } else {
+													   $scope.errorMessages = [ 'Unknown  server error' ];
+												   }
+											});
+}
 function CartCtrl($scope,Process,UserData)
 {
     console.log(UserData.getName());

@@ -1,7 +1,7 @@
 package org.vivo.cloudprovisioning.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
-
+import com.vivo.cloud_provision.RequisicaoData;
 /**
  * Created by vlima on 12/16/15.
  */

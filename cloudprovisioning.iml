@@ -83,5 +83,6 @@
     <orderEntry type="library" name="Maven: org.mvel:mvel2:2.2.4.Final-redhat-1" level="project" />
     <orderEntry type="library" name="Maven: javax.mail:mail:1.4.5.redhat-2" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1.GA-redhat-1" level="project" />
+    <orderEntry type="library" name="Maven: com.vivo:cloud_provision:1.0" level="project" />
   </component>
 </module>
