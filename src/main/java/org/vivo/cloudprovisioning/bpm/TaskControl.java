@@ -65,4 +65,11 @@ public class TaskControl
         }
         return taskRequests;
     }
+    public void completeTask(Long taskID,Map vars)
+    {
+        taskService.claim(taskID,userName);
+        taskService.start(taskID,userName);
+        taskService.complete(taskID,userName,vars);
+        System.out.println("Task "+taskID+" was successfully completed!");
+    }
 }

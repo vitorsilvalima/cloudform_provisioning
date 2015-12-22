@@ -3,7 +3,61 @@
   <li id="inbox" role="presentation" class="active"><a>Inbox</a></li>
 </ul>
 <div>
-	<h2 ng-repeat="t in tasks">{{t}}</h2>
+  <div class="container" ng:repeat="task in tasks">
+    <h2>Tarefa: {{task.id}}</h2>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Numero do Projeto:</label>
+        <div class="col-sm-10">
+          <input class="form-control"  type="text" ng:model="task.requisicaoData.numero_projeto" disabled>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Cliente:</label>
+        <div class="col-sm-10">
+          <input class="form-control"  type="text" ng:model="task.requisicaoData.cliente" disabled>
+        </div>
+      </div>
+      <div class="form-group">
+        <label  class="col-sm-2 control-label">Extra Info:</label>
+        <div class="col-sm-10">
+          <input class="form-control"  type="text"  ng:model="task.requisicaoData.extra_info">
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Quantidade de VMs</th>
+            <th>Numero de vCPUs</th>
+            <th>Quantidade de RAM</th>
+            <th>S.O.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  ng:repeat="item in task.requisicaoData.listRequisicao">
+            <td>
+              <input type="number" ng:model="item.quantidade_vm" ng:required class="form-control" disabled>
+            </td>
+            <td>
+              <input type="text" class="form-control" ng-model="item.numero_vcpus" disabled>
+            </td>
+            <td>
+              <input type="text" class="form-control" ng-model="item.quantidade_ram" disabled>
+            </td>
+            <td>
+              <input type="text" class="form-control" ng-model="item.so" disabled>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="form-group">
+        <div class="col-sm-10">
+          <button class="btn btn-default">Aceitar</button>
+          <button class="btn btn-default">Rejeitar</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">

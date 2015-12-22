@@ -62,6 +62,14 @@ function InboxCtrl($scope,Task,UserData)
 													   $scope.errorMessages = [ 'Unknown  server error' ];
 												   }
 											});
+	$scope.aceitarItem=function(index)
+	{
+		console.log($scope.tasks[index]);
+	}
+	$scope.rejeitarItem=function(index)
+	{
+		console.log($scope.tasks[index]);
+	}
 }
 function CartCtrl($scope,Process,UserData)
 {
@@ -84,9 +92,9 @@ function CartCtrl($scope,Process,UserData)
     	console.log(UserData.getUser());
     	var RequisicaoData={};
             RequisicaoData.listRequisicao=$scope.cart.items;
-            RequisicaoData.numero_projeto=23432;
-            RequisicaoData.extra_info="test";
-            RequisicaoData.cliente="test";
+            RequisicaoData.numero_projeto=$scope.cart.numeroProjeto;
+            RequisicaoData.extra_info=$scope.cart.extraInfo;
+            RequisicaoData.cliente=UserData.getName();
      	var ProcessRequest={};
      	    ProcessRequest.user=UserData.getUser();
      	    ProcessRequest.requisicaoData=RequisicaoData;
