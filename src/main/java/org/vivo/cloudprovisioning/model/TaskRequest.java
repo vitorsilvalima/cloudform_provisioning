@@ -9,16 +9,31 @@ import com.vivo.cloud_provision.RequisicaoData;
 public class TaskRequest
 {
     private long ID;
-    RequisicaoData requisicaoData;
-
-    public TaskRequest(long ID, RequisicaoData requisicaoData) {
+    private RequisicaoData requisicaoData;
+    private User user;
+    private boolean approval;
+    public TaskRequest(long ID, RequisicaoData requisicaoData, User user) {
         this.ID = ID;
         this.requisicaoData = requisicaoData;
+        this.user = user;
+    }
+    public User getUser() {
+        return user;
+    }
+    public void setUser(User user) {
+        this.user = user;
     }
     public TaskRequest()
     {
-
     }
+    public boolean isApproval() {
+        return approval;
+    }
+
+    public void setApproval(boolean approval) {
+        this.approval = approval;
+    }
+
     public long getID() {
         return ID;
     }

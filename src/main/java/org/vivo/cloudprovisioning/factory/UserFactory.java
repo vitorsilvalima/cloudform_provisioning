@@ -12,7 +12,7 @@ public class UserFactory
 		users = new ArrayList<User>();
     	users.add(new User("Vitor","vlima","Windows8-19","user"));
     	users.add(new User("Jose","jose","Windows8-19","user"));    
-    	users.add(new User("Wilson","wilson","Windows8-19","user"));    
+    	users.add(new User("Wilson","wilson","redhat@1","user"));
     	users.add(new User("Diego","diego","Windows8-19","user"));    
 	}
 	public List<User> getList()

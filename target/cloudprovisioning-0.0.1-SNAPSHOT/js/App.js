@@ -26,7 +26,7 @@ var app = angular.module("VivoApp",
             })
             .otherwise
             ({
-                redirectTo : '/requisicao'
+                redirectTo : '/login'
             });
         } ]);
     app.factory('ajaxNonceInterceptor', function() {

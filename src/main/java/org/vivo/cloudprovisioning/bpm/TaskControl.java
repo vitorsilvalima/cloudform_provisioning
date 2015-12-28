@@ -8,8 +8,8 @@ import org.kie.api.task.TaskService;
 import org.kie.api.task.model.*;
 import org.kie.services.client.api.RemoteRestRuntimeEngineFactory;
 import org.kie.services.client.api.RemoteRuntimeEngineFactory;
-import org.vivo.cloudprovisioning.model.TaskRequest;
-
+import org.vivo.cloudprovisioning.model.*;
+import org.vivo.cloudprovisioning.model.User;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,23 +20,21 @@ import java.util.Map;
  */
 public class TaskControl
 {
-    private String userName;
-    private String passWord;
+    private User user;
     private String applicationContext;
     private RuntimeEngine engine = null;
     private KieSession ksession = null;
     private TaskService taskService = null;
-    public TaskControl(String userName, String passWord)
+    public TaskControl(User user)
     {
         RemoteRestRuntimeEngineFactory restSessionFactory = null;
         applicationContext="http://localhost:8080/business-central";
-        this.userName=userName;
-        this.passWord=passWord;
+        this.user=user;
         try
         {
             restSessionFactory = RemoteRuntimeEngineFactory.newRestBuilder()
                     .addUrl(new URL(applicationContext))
-                    .addUserName(userName).addPassword(passWord)
+                    .addUserName(this.user.getLogin()).addPassword(this.user.getPwd())
                     .addDeploymentId("com.vivo:cloud_provision:1.0").buildFactory();
             engine=restSessionFactory.newRuntimeEngine();
             taskService=engine.getTaskService();
@@ -50,7 +48,7 @@ public class TaskControl
     {
         List<Status> statuses = new ArrayList<>();
         statuses.add(Status.Ready);
-        List<TaskSummary>taskSummaries=taskService.getTasksAssignedAsPotentialOwnerByStatus(userName, statuses, null);
+        List<TaskSummary>taskSummaries=taskService.getTasksAssignedAsPotentialOwnerByStatus(user.getLogin(), statuses, null);
         List<TaskRequest> taskRequests = new ArrayList<TaskRequest>();
         for(TaskSummary tasksummary: taskSummaries)
         {
@@ -61,15 +59,15 @@ public class TaskControl
             Object objectMap = ContentMarshallerHelper.unmarshall(content.getContent(), null);
             Map<String,Object> mapContent = (Map<String,Object>)objectMap;
             RequisicaoData requisicaoData = (RequisicaoData)mapContent.get("requisicao_in");
-            taskRequests.add(new TaskRequest(id,requisicaoData));
+            taskRequests.add(new TaskRequest(id,requisicaoData,user));
         }
         return taskRequests;
     }
     public void completeTask(Long taskID,Map vars)
     {
-        taskService.claim(taskID,userName);
-        taskService.start(taskID,userName);
-        taskService.complete(taskID,userName,vars);
+        taskService.claim(taskID,user.getLogin());
+        taskService.start(taskID,user.getLogin());
+        taskService.complete(taskID,user.getLogin(),vars);
         System.out.println("Task "+taskID+" was successfully completed!");
     }
 }

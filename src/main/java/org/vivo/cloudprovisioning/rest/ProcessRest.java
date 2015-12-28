@@ -1,10 +1,8 @@
 package org.vivo.cloudprovisioning.rest;
 
-import org.jbpm.process.instance.impl.demo.SystemOutWorkItemHandler;
 import org.vivo.cloudprovisioning.bpm.ProcessControl;
 import org.vivo.cloudprovisioning.model.ProcessRequest;
 import com.vivo.cloud_provision.RequisicaoVM;
-import com.vivo.cloud_provision.RequisicaoData;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -29,23 +27,6 @@ public class ProcessRest
       //  System.out.println("The process has started with the id: " + processControl.starProcess(r));
         return Response.ok(r).build();
     }
-   /* @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response startProcess(List<RequisicaoVM> requisicaoVMs)
-    {
-        ProcessControl processControl = new ProcessControl();
-        if(requisicaoVMs!=null)
-        {
-            for(RequisicaoVM requisicaoVM:requisicaoVMs)
-            {
-                System.out.println("The process has started with the id: " + processControl.starProcess(requisicaoVM));
-            }
-        }
-        Map res = new HashMap();
-        res.put("status",true);
-        return Response.ok(res).build();
-    }*/
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)

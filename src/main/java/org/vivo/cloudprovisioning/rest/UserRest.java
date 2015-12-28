@@ -3,7 +3,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -12,7 +11,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.vivo.cloudprovisioning.bpm.JbpmManager;
 import org.vivo.cloudprovisioning.factory.UserFactory;
 import org.vivo.cloudprovisioning.model.User;
 
@@ -20,9 +18,7 @@ import org.vivo.cloudprovisioning.model.User;
 @Path("/users")
 public class UserRest {
 	
-	//@Inject 
-	//private JbpmManager jbpmManager;
-	
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response listAllUsers() 

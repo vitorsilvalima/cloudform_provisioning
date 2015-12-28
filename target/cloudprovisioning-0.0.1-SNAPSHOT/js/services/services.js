@@ -11,6 +11,10 @@ angular.module('userService', ['ngResource']).
      		getTasks:function()
      		{
      			return $resource('rest/task/tasks/:taskID',{},{'save':  {method:'POST', isArray:false}});
+            },
+            completeTask:function()
+            {
+                return $resource('rest/task/complete/:taskID',{},{'save':  {method:'POST', isArray:true}})
             }
      	};
      }

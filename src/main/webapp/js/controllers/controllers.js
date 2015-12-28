@@ -14,7 +14,7 @@ function LoginCtrl($scope,Users,$location,UserData)
 				UserData.setPwd($scope.login.pwd);
 				UserData.setGroup(data.group);
 				console.log(UserData.getName() + " is now logged on the system"+UserData.getLogin());
-				$location.path("#/requisicao")
+				$location.path("#/requisicao");
 			}
 			else
 			{
@@ -62,13 +62,31 @@ function InboxCtrl($scope,Task,UserData)
 													   $scope.errorMessages = [ 'Unknown  server error' ];
 												   }
 											});
+	var completeTask=function(index)
+	{
+		Task.completeTask().save($scope.tasks[index], function(data)
+        											{
+        												console.log(data);
+        											}, function(result) {
+        												   if ((result.status == 409) || (result.status == 400)) {
+        													   $scope.errors = result.data;
+        												   } else {
+        													   $scope.errorMessages = [ 'Unknown  server error' ];
+        												   }
+        											});
+         $scope.tasks.splice(index, 1);
+	};
 	$scope.aceitarItem=function(index)
 	{
 		console.log($scope.tasks[index]);
+		$scope.tasks[index].approval=true;
+		completeTask(index);
 	}
 	$scope.rejeitarItem=function(index)
 	{
 		console.log($scope.tasks[index]);
+		$scope.tasks[index].approval=false;
+		completeTask(index);
 	}
 }
 function CartCtrl($scope,Process,UserData)

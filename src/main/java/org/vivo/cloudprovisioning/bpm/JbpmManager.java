@@ -1,18 +1,11 @@
 package org.vivo.cloudprovisioning.bpm;
-import org.jbpm.services.task.commands.ExecuteDeadlinesCommand;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.manager.RuntimeEngine;
 import org.kie.api.task.TaskService;
-import org.kie.api.task.model.Content;
-import org.kie.api.task.model.Task;
-import org.kie.api.task.model.TaskData;
 import org.kie.api.task.model.TaskSummary;
 import org.kie.services.client.api.RemoteRestRuntimeEngineFactory;
 import org.kie.services.client.api.RemoteRuntimeEngineFactory;
-import org.jbpm.services.task.utils.ContentMarshallerHelper;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 import javax.ejb.Stateless;
 
 @Stateless
